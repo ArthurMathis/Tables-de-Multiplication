@@ -5,14 +5,34 @@
   <title>Table de multiplication</title>
 
   <style type="text/css">
+    :root{
+      --bg: #f7f7f7;
+      --main: #333;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex: 1;
+
+      width: 100vw;
+      height: 100vh;
+
+      margin: 0;
+      padding: 0;
+
+      background-color: var(--bg);
+    }
+    *{
+      color: var(--main);
+    }
     .result { 
       color: red; 
     }
-
 	  .lig { 
       color: blue; 
     }
-
     table { 
       text-align: right; 
     }
@@ -21,6 +41,8 @@
 <body>
   <h1>Table de multiplication</h1>
   <div id="tablemult"></div>
+
+  <p>Regarde dans la console !</p>
 
   <script src="ligneatrou.js"></script>
 </body>

@@ -5,21 +5,37 @@
   <title>Table de multiplication</title>
 
   <style type="text/css">
+    :root{
+      --bg: #f7f7f7;
+      --main: #333;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex: 1;
+
+      width: 100vw;
+      height: 100vh;
+
+      margin: 0;
+      padding: 0;
+
+      background-color: var(--bg);
+    }
+    *{
+      color: var(--main);
+    }
     li{
       list-style: none;
-    }
-
-    li ul{
-      color: black;
     }
     .result { 
       color: red; 
     }
-
 	  .lig { 
       color: blue; 
     }
-
     table { 
       text-align: right; 
     }

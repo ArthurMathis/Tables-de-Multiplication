@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button1">Version 1</button>
+    <button id="button2">Version 2</button>
+    <button id="button3">Version 3</button>
+
+    <style type="text/css">
+        :root{
+            --bg: #f7f7f7;
+            --main: #333;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+
+            width: 100vw;
+            height: 100vh;
+
+            margin: 0;
+            padding: 0;
+
+            background-color: var(--bg);
+        }
+
+        button{
+            display: block;
+            width: 100px;
+            height: 40px;
+
+
+            margin: 10px;
+
+            color: var(--main);
+
+            border: 0.5px solid var(--main);
+            background-color: transparent;
+            border-radius: 20px;
+
+            transform: none;
+            transition: transform 0.25s;
+            will-change: transform;
+        }
+        
+        button:hover{
+            transform: scale(1.05);
+        }
+    </style>
+
+    <script>
+        const buttons = [
+            document.getElementById('button1'), 
+            document.getElementById('button2'),
+            document.getElementById('button3')
+        ];
+
+        const dest = [
+            "Version 1/tablemulthtml.html", 
+            "Version 2/tablemulthtml.html",
+            "Version 3/tablemulthtml.html"
+        ];
+
+        for(let i = 0; i < buttons.length; i++){
+            buttons[i].addEventListener('click', () => {
+                window.location.href = dest[i];
+            });
+        }
+    </script>
+</body>
+</html>
