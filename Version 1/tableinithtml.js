@@ -5,7 +5,7 @@ function debutHTMLTableMultiplication(n){
 function ligneHTMLTableMultiplication(n,numligne){
   const res = n * numligne;
   return "<li><pan class=\"lig\">" + n + "</span> x <span lass=\"num\">" + numligne + 
-        " = <span class\"result\">" + res + "</span></li>";
+        " = <span class=\"result\">" + res + "</span></li>";
 }
 
 function finHTMLTableMultiplication(n){
